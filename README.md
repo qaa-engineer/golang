@@ -197,10 +197,10 @@
 
 <p>Для проверки вы можете использовать команду <code>go get</code> для доставки библиотеки <code>godo</code>:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">go get github.com/digitalocean/godo
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Мы можем увидеть успешную загрузку пакета <code>godo</code> посредством вывода директории:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token function"></span><ul class="prefixed"><span class="token function"></span><li class="line" data-prefix="$"><span class="token function">ls</span> -l <span class="token variable">$GOPATH</span>/src/github.com/digitalocean/godo
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Результат должен выглядеть примерно так:</p>
 <pre class="code-pre "><code><div class="secondary-code-label " title="Output">Output</div>-rw-r--r--  1 sammy  staff   2892 Apr  5 15:56 CHANGELOG.md
 -rw-r--r--  1 sammy  staff   1851 Apr  5 15:56 CONTRIBUTING.md
@@ -220,7 +220,7 @@
 
 <p>Откройте в домашней директории редактор <code>nano</code> или другой текстовый редактор командной строки и создайте новый файл:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token function"></span><ul class="prefixed"><span class="token function"></span><li class="line" data-prefix="$"><span class="token function">nano</span> hello.go
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Когда текстовый файл откроется в терминале, введите код программы:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre  language-go"><code class="code-highlight  language-go"><span class="token keyword">package</span> main
 
@@ -228,14 +228,14 @@
 
 <span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+<span class="token punctuation">}</span></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Для выхода из nano нажмите клавиши <code>control</code> и <code>х</code>, а когда система предложит вам сохранить файл, нажмите клавишу <code>y</code>.</p>
 
 <p>Этот код использует пакет <code>fmt</code> и вызывает функцию <code>Println</code> с <code>Hello, World!</code> в качестве аргумента. В результате фраза <code>Hello, World!</code> распечатывается на терминале при запуске программы.</p>
 
 <p>После выхода из <code>nano</code> и возврата в оболочку запустите программу:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">go run hello.go
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Созданная программа <code>hello.go</code> выведет на терминале следующее:</p>
 <pre class="code-pre "><code><div class="secondary-code-label " title="Output">Output</div>Hello, World!
 </code></pre>
