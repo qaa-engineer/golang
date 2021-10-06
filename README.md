@@ -31,7 +31,7 @@
 
 <p>Xcode — это <em>интегрированная среда разработки</em> (IDE), состоящая из различных инструментов разработки программного обеспечения для macOS. Вы можете проверить установку Xcode, введя в окне терминала следующую команду:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">xcode-select -p
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Следующие результаты означают, что среда разработки Xcode установлена:</p>
 <pre class="code-pre "><code><div class="secondary-code-label " title="Output">Output</div>/Library/Developer/CommandLineTools
 </code></pre>
@@ -39,7 +39,7 @@
 
 <p>После установки Xcode вернитесь в окно терминала. Теперь вам нужно установить отдельное приложение Command Line Tools Xcode с инструментами командной строки. Для этого введите следующую команду:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">xcode-select --install
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Теперь вы установили Xcode и приложение Command Line Tools, и мы готовы к установке диспетчера пакетов Homebrew.</p>
 
 <h2 id="Шаг-3-—-Установка-и-настройка-homebrew">Шаг 3 — Установка и настройка Homebrew</h2>
@@ -48,7 +48,7 @@
 
 <p>Для установки Homebrew введите в окно терминала следующее:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">/usr/bin/ruby -e <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="token variable">)</span></span>"</span>
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Диспетчер Homebrew создан на языке Ruby и поэтому он изменит путь Ruby на вашем компьютере. Команда <code>curl</code> извлекает скрипт из заданного URL. Этот скрипт объясняет, какие операции будут выполнены, а затем приостанавливает процесс в ожидании вашего подтверждения. Так вы получаете большой объем обратной связи по работе скрипта в вашей системе, а также возможность проверить выполнение процесса.</p>
 
 <p>Если вам потребуется ввести пароль, учтите, что нажимаемые клавиши не отображаются в окне терминала, но их ввод регистрируется. Просто нажмите клавишу <code>Return</code> после завершения ввода пароля. В противном случае нажмите клавишу <code>y</code> («Да»), чтобы подтвердить установку.</p>
@@ -65,7 +65,7 @@
 
 <p>Вам следует создать или открыть файл <code>~/.bash_profile</code> с помощью текстового редактора командной строки <strong>nano</strong>, используя команду <code>nano</code>:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token function"></span><ul class="prefixed"><span class="token function"></span><li class="line" data-prefix="$"><span class="token function">nano</span> ~/.bash_profile
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Когда файл откроется в окне терминала, введите следующую команду:</p>
 <pre class="code-pre "><code>export PATH=/usr/local/bin:$PATH
 </code></pre>
@@ -73,12 +73,12 @@
 
 <p>Для активации этих изменений выполните в терминале следующую команду:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name"></span><ul class="prefixed"><span class="token builtin class-name"></span><li class="line" data-prefix="$"><span class="token builtin class-name">source</span> ~/.bash_profile
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>После этого внесенные вами изменения переменной среды <code>PATH</code> вступят в силу.</p>
 
 <p>Вы можете убедиться в успешной установке Homebrew с помощью следующей команды:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">brew doctor
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Если никакие обновления не требуются, на экране терминала появится следующее:</p>
 <pre class="code-pre "><code><div class="secondary-code-label " title="Output">Output</div>Your system is ready to brew.
 </code></pre>
@@ -90,7 +90,7 @@
 
 <p>Вы можете использовать Homebrew для поиска всех доступных пакетов с помощью команды <code>brew search</code>. В этом руководстве мы будем искать пакеты или модули, связанные с Go:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">brew search golang
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p><span class="note"><strong>Примечание</strong>. В этом руководстве не используется команда <code>brew search go</code>, поскольку она возвращает слишком много результатов. Поскольку <code>go</code> — очень короткое слово, и ему может соответствовать много пакетов, в качестве поискового запроса обычно используют <code>golang</code>. Эта практика также обычно применяется при поиске статей по Go в Интернете. Термин <em>Golang</em> происходит от названия домена Go, а именно <code>golang.org</code>.<br></span></p>
 
 <p>Терминал выведет список модулей, которые вы можете установить:</p>
@@ -98,18 +98,18 @@
 </code></pre>
 <p>В этом списке будет и Go. Переходите к установке:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">brew <span class="token function">install</span> golang
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>В окне терминала будет отображаться информация по процессу установки Go. Установка может занять несколько минут.</p>
 
 <p>Чтобы проверить, какую версию Go вы установили, введите следующую команду:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">go version
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Эта команда выводит номер установленной версии Go. По умолчанию устанавливается самая последняя стабильная версия Go.</p>
 
 <p>В будущем для обновления Go вы можете использовать следующие команды, которые сначала обновляют Homebrew, а затем — Go. Сейчас это не требуется, поскольку вы только что установили последнюю версию:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><ul class="prefixed"><li class="line" data-prefix="$">brew update
 </li><li class="line" data-prefix="$">brew upgrade golang
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p><code>brew update</code> обновляет версию Homebrew, благодаря чему у вас будет самая актуальная информация о пакетах, которые вы хотите установить. Команда <code>brew upgrade golang</code> обновит пакет <code>golang</code> до последней доступной версии.</p>
 
 <p>Рекомендуется регулярно проверять актуальность установленной версии Go.</p>
@@ -153,7 +153,7 @@
 
 <p>Введите следующую команду для создания структуры директорий рабочего пространства Go:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token function"></span><ul class="prefixed"><span class="token function"></span><li class="line" data-prefix="$"><span class="token function">mkdir</span> -p <span class="token environment constant">$HOME</span>/go/<span class="token punctuation">{</span>bin,src<span class="token punctuation">}</span>
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Опция <code>-p</code> предписывает команде <code>mkdir</code> создать в директории все <code>родительские элементы</code>, даже если их еще не существует. При использовании параметров <code>{bin,src}</code> для команды <code>mkdir</code> создается набор аргументов, предписывающий ей создать директорию <code>bin</code> и директорию <code>src</code>.</p>
 
 <p>Таким образом, обеспечивается размещение следующей структуры директорий:</p>
@@ -168,22 +168,22 @@
 
 <p>Откройте файл <code>~/.bash_profile</code> с помощью <code>nano</code> или другого предпочитаемого текстового редактора:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token function"></span><ul class="prefixed"><span class="token function"></span><li class="line" data-prefix="$"><span class="token function">nano</span> ~/.bash_profile
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Чтобы задать переменную <code>$GOPATH</code>, добавьте в файл следующую строку:</p>
-<div class="code-label " title="~/.bash_profile">~/.bash_profile</div><div class="code-toolbar"><div class="context"><pre class="code-pre sh language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">GOPATH</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/go</code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+<div class="code-label " title="~/.bash_profile">~/.bash_profile</div><div class="code-toolbar"><div class="context"><pre class="code-pre sh language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">GOPATH</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/go</code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>При компиляции и установке инструментов Go помещает их в директорию <code>$GOPATH/bin</code>. Для удобства субдиретория <code>/bin</code> рабочего пространства обычно добавляется в переменную <code>PATH</code> в файле <code>~/.bash_profile</code>:</p>
-<div class="code-label " title="~/.bash_profile">~/.bash_profile</div><div class="code-toolbar"><div class="context"><pre class="code-pre sh language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$GOPATH</span>/bin</code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+<div class="code-label " title="~/.bash_profile">~/.bash_profile</div><div class="code-toolbar"><div class="context"><pre class="code-pre sh language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$GOPATH</span>/bin</code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Теперь в файле <code>~/.bash_profile</code> должны быть следующие записи:</p>
 <div class="code-label " title="~/.bash_profile">~/.bash_profile</div><div class="code-toolbar"><div class="context"><pre class="code-pre sh language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">GOPATH</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/go
-<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$GOPATH</span>/bin</code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$GOPATH</span>/bin</code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Это позволит вам запускать любые компилируемые или загружаемые программы через инструменты Go в любом месте в вашей системе.</p>
 
 <p>Для обновления оболочки используйте следующую команду для загрузки созданных глобальных переменных:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name"></span><ul class="prefixed"><span class="token builtin class-name"></span><li class="line" data-prefix="$"><span class="token builtin class-name">.</span> ~/.bash_profile
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Вы можете проверить обновление переменной <code>$PATH</code>, запустив команду <code>echo</code> и просмотрев результаты:</p>
 <div class="code-toolbar"><div class="context"><pre class="code-pre command prefixed language-bash"><code class="code-highlight  language-bash"><span class="token builtin class-name"></span><ul class="prefixed"><span class="token builtin class-name"></span><li class="line" data-prefix="$"><span class="token builtin class-name">echo</span> <span class="token environment constant">$PATH</span>
-</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button>Copy</button></div></div></div>
+</li></ul></code></pre><span style="font-size: 0px; line-height: 0; opacity: 0; pointer-events: none; position: absolute;">&nbsp;</span></div><div class="toolbar"><div class="toolbar-item"><button></button></div></div></div>
 <p>Вы должны увидеть директорию <code>$GOPATH/bin</code> в своей домашней директории. Если вы вошли в систему под именем пользователя <code>sammy</code>, вы увидите путь <code>/Users/sammy/go/bin</code>.</p>
 <pre class="code-pre sh"><code><div class="secondary-code-label " title="Output">Output</div><span class="highlight">/Users/sammy/go/bin</span>:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 </code></pre>
